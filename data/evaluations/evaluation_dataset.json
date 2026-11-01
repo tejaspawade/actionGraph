@@ -1,0 +1,45 @@
+
+[
+  {
+    "meeting_id": "meeting_001",
+    "transcript": "Rahul: I'll finish the payment integration by Friday.\nPriya: I'll fix the authentication issue today.\nAmit: The production credentials are still pending.\nRahul: Let's discuss the database migration next week.",
+    "expected_actions": [
+      {
+        "action": "Finish the payment integration",
+        "type": "explicit"
+      },
+      {
+        "action": "Fix the authentication issue",
+        "type": "explicit"
+      }
+    ]
+  },
+  {
+    "meeting_id": "meeting_002",
+    "transcript": "Neha: I'll send the report tomorrow.\nArjun: The dashboard is loading slowly. I'll investigate the performance issue.\nNeha: We should review the release plan next Monday.",
+    "expected_actions": [
+      {
+        "action": "Send the report",
+        "type": "explicit"
+      },
+      {
+        "action": "Investigate the dashboard performance issue",
+        "type": "explicit"
+      }
+    ]
+  },
+  {
+    "meeting_id": "meeting_003",
+    "transcript": "Meera: Could someone look into the failed payments?\nKaran: I'll take a look after lunch.\nMeera: I'll share the error logs with you.\nKaran: We need to decide on the database migration approach.",
+    "expected_actions": [
+      {
+        "action": "Investigate the failed payments",
+        "type": "implicit"
+      },
+      {
+        "action": "Share the error logs",
+        "type": "explicit"
+      }
+    ]
+  }
+]
