@@ -217,7 +217,7 @@ python scripts/evaluate.py
 | Variable | Description | Default |
 |---|---|---|
 | `GEMINI_API_KEY` | Google Gemini API key | Required |
-| `GEMINI_MODEL` | Gemini model identifier | `gemini-2.5-flash` |
+| `GEMINI_MODEL` | Gemini model identifier | `gemini-3.8-flash` |
 | `WHISPER_MODEL` | faster-whisper model size | `base` |
 
 For lower-memory deployments, a smaller Whisper model such as `tiny` may reduce resource usage at the cost of transcription quality.
@@ -234,14 +234,3 @@ Typical Web Service settings:
 
 Set secrets through the hosting provider's environment-variable settings, not in source control. Check the hosting provider's current resource limits before deploying Whisper; model downloads, startup time, and memory usage may exceed the limits of small instances.
 
-## Limitations and Future Improvements
-
-- Transcription mistakes can propagate into action-item extraction.
-- Evidence matching verifies quote presence, not semantic correctness.
-- Extraction quality depends on audio quality, transcript clarity, and LLM behavior.
-- The current evaluation dataset is small and should be expanded for more reliable assessment.
-- Production hardening could include authentication, upload-size limits, rate limiting, structured logging, monitoring, and stronger semantic validation.
-
-## License
-
-Add a license file and update this section if you intend to distribute the project publicly.
